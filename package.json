@@ -17,5 +17,12 @@
   "bugs": {
     "url": "https://github.com/prekel/DuckDuckGoogle/issues"
   },
-  "homepage": "https://github.com/prekel/DuckDuckGoogle#readme"
+  "homepage": "https://github.com/prekel/DuckDuckGoogle#readme",
+  "dependencies": {
+    "@babel/core": "^7.8.4",
+    "fable-compiler": "^2.4.15",
+    "fable-loader": "^2.1.8",
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.3.11"
+  }
 }
