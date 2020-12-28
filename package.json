@@ -3,11 +3,8 @@
   "private": true,
   "version": "1.0.0",
   "description": "",
-  "main": "src/App.fs.js",
   "scripts": {
-    "build1": "webpack",
-    "build": "dotnet fable ./src/",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -19,7 +16,7 @@
     "url": "https://github.com/prekel/DuckDuckGoogle/issues"
   },
   "homepage": "https://github.com/prekel/DuckDuckGoogle#readme",
-  "dependencies": {
+  "devDependencies": {
     "@babel/core": "^7.12.10",
     "fable-compiler": "^2.13.0",
     "fable-loader": "^2.1.9",
