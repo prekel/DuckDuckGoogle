@@ -1,0 +1,21 @@
+{
+  "name": "duckduckgoogle",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/App.fs.js",
+  "scripts": {
+    "build": "dotnet fable ./src/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prekel/DuckDuckGoogle.git"
+  },
+  "author": "Vladislav Prekel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/prekel/DuckDuckGoogle/issues"
+  },
+  "homepage": "https://github.com/prekel/DuckDuckGoogle#readme"
+}
