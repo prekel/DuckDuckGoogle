@@ -6,16 +6,12 @@
   "icons": {
   },
   "permissions": [
-    "http://*/*",
-    "https://*/*",
-    "file:///*",
-    "contextMenus",
-    "storage"
+    "https://duckduckgo.com/*"
   ],
   "content_scripts": [
     {
       "matches": [
-        "<all_urls>"
+        "https://duckduckgo.com/*"
       ],
       "js": [
         "dist/bundle.js"
