@@ -5,6 +5,7 @@
   "description": "",
   "main": "src/App.fs.js",
   "scripts": {
+    "build1": "webpack",
     "build": "dotnet fable ./src/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -19,10 +20,10 @@
   },
   "homepage": "https://github.com/prekel/DuckDuckGoogle#readme",
   "dependencies": {
-    "@babel/core": "^7.8.4",
-    "fable-compiler": "^2.4.15",
-    "fable-loader": "^2.1.8",
-    "webpack": "^4.41.6",
-    "webpack-cli": "^3.3.11"
+    "@babel/core": "^7.12.10",
+    "fable-compiler": "^2.13.0",
+    "fable-loader": "^2.1.9",
+    "webpack": "^5.11.1",
+    "webpack-cli": "^4.3.0"
   }
 }

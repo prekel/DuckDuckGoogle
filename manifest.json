@@ -19,8 +19,7 @@
       ],
       "js": [
         "dist/bundle.js"
-      ],
-      "run_at": "document_start"
+      ]
     }
   ]
 }
