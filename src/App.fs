@@ -1,15 +1,35 @@
 module App
 
 open Browser.Dom
+open Fable.Core.JS
 
-let private links =
-    document.getElementById ("links") :?> Browser.Types.HTMLDivElement
+let results =
+    (document.getElementsByClassName("results--main")).[0] :?> Browser.Types.HTMLDivElement
 
-let private input =
+results.setAttribute ("style", "width: 700px")
+
+
+let input =
     document.getElementById ("search_form_input") :?> Browser.Types.HTMLInputElement
 
-let private v = input.value
+let duckbar =
+    document.getElementById ("duckbar_static") :?> Browser.Types.HTMLUListElement
 
-printfn "%s12" v
+let googleListItem =
+    document.createElement ("li") :?> Browser.Types.HTMLLIElement
 
-links.setAttribute ("style", "width: 700px")
+googleListItem.className <- "zcm__item"
+
+let googleA =
+    document.createElement ("a") :?> Browser.Types.HTMLAnchorElement
+
+googleA.className <- "zcm__link js-zci-link"
+
+googleA.href <-
+    "https://www.google.com/search?q="
+    + encodeURIComponent (input.value)
+
+googleA.textContent <- "Google"
+
+googleListItem.appendChild (googleA) |> ignore
+duckbar.appendChild (googleListItem) |> ignore

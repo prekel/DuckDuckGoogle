@@ -558,3 +558,5 @@ dist
 
 
 dist/
+
+*fs.js
